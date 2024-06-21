@@ -1,0 +1,27 @@
+<script>
+    function add(a,b){ //function-->parameters are treaated as local variables
+       let c=a+b; //c , a & b are local variables within the block are called the local variables
+       //Block level scope we use let keyword 
+       // local variables can't be used outside the function or block
+       return c;//returning the c value --->c=30
+    }
+    //add(10,20);--->Calling function-->two arguments 10,20
+    //c=30 returns to the calling function
+    let x=add(10,20);
+    console.log("x\t"+x);
+
+    function sub(a,b){ //subtraction
+        let c=a-b;
+        return c;
+    }
+    let y=sub(10,20);
+    console.log("y\t"+y);
+
+    function multi(a,b){//Multiplication
+        let c=a*b;
+        return c;
+    }
+    let z=multi(10,20);
+    console.log("z\t"+z);
+    
+</script>

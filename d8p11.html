@@ -1,0 +1,18 @@
+<script>
+    class Emp{
+        constructor(ename,eroll,esal){//parameterised contructor
+            this.ename=ename;//this.enmae is an present  property(this) object(ename) -->(this.ename) and ename is the parameter
+            this.eroll=eroll;
+            this.esal=esal;
+        }
+        display(){
+            console.log("ename"+this.ename);
+            console.log("eroll"+this.eroll);
+            console.log("esal"+this.esal);
+        }
+    }
+    let e1=new Emp(1,"Vitha",500000);
+    let e2=new Emp(1,"Navi",1000000);
+    e1.display();
+    e2.display();
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 1</title>
+    <link rel="shortcut icon" href="HTMLPIC/Vitha Tech 1.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1 class="alert bg-info">Small Example for Functions</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="mb-3"><input class="form-control" type="text"id="ta"></div>
+                <div class="mb-3"><input class="form-control" type="text" name="" id="tb"></div>
+                <div class="mb-3"><input class="form-control" type="text" name="" id="tc"></div>
+                <div> 
+                    <button onclick="fun1(this)" class="btn btn-warning">Add</button>
+                    <button onclick="fun1(this)" class="btn btn-danger">Sub</button>
+                    <button onclick="fun1(this)" class="btn btn-success ">Multi</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</body>
+</html>
+<script>
+    function fun1(demo){
+        let v1=parseFloat(document.getElementById("ta").value);
+        let v2=parseFloat(document.getElementById("tb").value);
+        let c=0;
+        if(demo.innerHTML=="Add"){
+            c=v1+v2;
+        }else if(demo.innerHTML=="Sub"){
+            c=v1-v2;
+        }
+        else if(demo.innerHTML=="Multi"){
+           c=v1*v2;
+        }
+        document.getElementById("tc").value=c;
+    }
+</script>

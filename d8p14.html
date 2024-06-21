@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+    
+</body>
+    <h1 id="t1">MyTitle</h1>
+    <button onclick="fun1()" class="btn btn-danger">Change color</button>
+    <button onclick="fun2()" class="btn btn-success">Change Font family</button>
+</html>
+<script>
+    function fun2(){
+        document.getElementById("t1").style.fontFamily="Arial";
+    }
+    function fun1(){
+        let ele=document.getElementById("t1");
+        ele.style.color="green";
+}
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h1 class="bg-info p-3">
+                        <img src="HTMLPIC/Vitha Tech 1.png" class="img img-fluid rounded-circle w-10" style="" alt="">Login Page</h1>
+                    <form action="login.php" onsubmit="return validate()">
+                        <div  class="mb-3">
+                            <input class="form-control bg-secondary bg-warning" type="E-Mail" name="" id="Email" placeholder="E-Mail">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-secondary bg-warning" type="password" name="password" id="pwd" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-danger">Login</button>
+                            <button class="btn btn-success">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function validate(){
+        let email=document.getElementById("Email").value;
+        let pwd=document.getElementById("pwd").value;
+        if(Email==""){
+            alert('Email Must not be Empty');
+            return false;
+        } 
+        if(pwd==""){
+            alert('Password must not be empty');
+            return false;
+        }
+        if(pwd!="" && pwd.length<6){
+            alert('Password atleast 6 characters');
+            return false;
+        }
+        return true;
+    }
+</script>
